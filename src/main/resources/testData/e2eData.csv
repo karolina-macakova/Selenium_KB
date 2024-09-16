@@ -1,0 +1,3 @@
+username, password, quantity, price, firstName, lastName, postalCode
+standard_user, secret_sauce, 1, 29.99, ABC, DEF, 123
+visual_user, secret_sauce
