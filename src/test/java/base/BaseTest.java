@@ -13,8 +13,8 @@ public class BaseTest {
 
     @BeforeEach
     public void setUp() {
-        //TODO - browser
-        driver = WebDriverManager.getDriver("chrome");
+        //TODO - parallel testing in different browsers
+        driver = WebDriverManager.getDriver("firefox");
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));

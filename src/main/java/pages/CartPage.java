@@ -1,14 +1,12 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class CartPage {
     WebDriver driver;
 
     // Locators
-    By title = By.cssSelector("[data-test=\"title\"]");
     By itemQuantity = By.cssSelector("[data-test=\"item-quantity\"]");
     By itemPrice = By.cssSelector("[data-test=\"inventory-item-price\"]");
     By checkoutButton = By.cssSelector("[data-test=\"checkout\"]");

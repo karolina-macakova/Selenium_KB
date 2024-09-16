@@ -1,18 +1,16 @@
 package tests;
 
 import base.BaseTest;
-import org.checkerframework.checker.units.qual.A;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import pages.*;
 
 
 public class E2ETest extends BaseTest {
 
-    //TODO @CsvFileSource
     @ParameterizedTest
-    @CsvSource({"standard_user, secret_sauce, 1, $29.99, ABC, XYZ, 123, SauceCard #31337, Free Pony Express Delivery!, Total: $32.39"})
+    @CsvFileSource(resources = "/e2eData.csv")
     public void addToCart(String username, String password,
                           String quantity, String price,
                           String firstName, String lastName, String postalCode,
